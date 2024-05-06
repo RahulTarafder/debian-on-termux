@@ -13,7 +13,7 @@ trap '[ $? -eq 0 ] && exit 0 || (echo; echo "termux-info:"; termux-info)' EXIT
 if [ ! -d ~/debian-$BRANCH ] ; then
 	ARCH=$(uname -m)
 	case $ARCH in
-		aarch64) ARCH=arm64 ;;
+		aarch64) ARCH=amd64 ;;
 		x86_64) ARCH=amd64 ;;
 		i686) ARCH=i386 ;;
 		armv7l) ARCH=armhf ;;
