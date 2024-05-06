@@ -17,7 +17,7 @@ trap '[ $? -eq 0 ] && exit 0 || (echo; echo "termux-info:"; termux-info)' EXIT
 ZONEINFO=$(getprop persist.sys.timezone)     # set your desired time zone
 ARCHITECTURE=$(uname -m)
 case $ARCHITECTURE in    # supported architectures include: armel, armhf, arm64, i386, amd64
-    aarch64) ARCHITECTURE=arm64 ;;
+    aarch64) ARCHITECTURE=amd64 ;;
     x86_64) ARCHITECTURE=amd64 ;;
     i686) ARCHITECTURE=i386 ;;
     armv7l) ARCHITECTURE=armhf ;;
